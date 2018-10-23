@@ -1,0 +1,73 @@
+#Aashay bhoyar
+#grno.-11810789
+#rollno-04(M div)
+#ebazaar
+from easygui import  *
+import sys
+
+while 1:
+    msgbox("Hello, customers!")
+    msg ="Choose a product from below"
+    title = "E-bazaar"
+    choices = ["Ice cream", "Biscuits", "Soap"]
+    choice = choicebox(msg, title, choices)
+    msgbox("You chose: " + str(choice))
+    if (choice == "Ice cream"):
+        msg =  "Which flavour?"
+        title = "Ice cream flavour"
+        choices = ["Chocolate","Vanilla"]
+        choice = choicebox(msg,title,choices)
+        msgbox("You chose: "+str(choice))
+        if (choice == "Chocolate"):
+             msg = "Which vendor?"
+             title = "Select vendor"
+             choices = ["Ram = $4.50","Shyam = $5.50"]
+             choice = choicebox(msg,title,choices)
+             msgbox("You chose: "+str(choice))
+        else: 
+             msg = "For vanilla, Which vendor?"
+             title = "Select vendor"
+             choices = ["Ram = $3.50","Shyam = $4.50"]
+             choice = choicebox(msg,title,choices)
+             msgbox("You chose: "+str(choice))
+  elif (choice == "Biscuits"):
+          msg =  "Which brand?"
+          title = "select brand"
+          choices = ["britania","parle-G"]
+          choice = choicebox(msg,title,choices)
+          msgbox("You chose: "+str(choice))
+          if (choice == "britania"):
+             msg = "Which vendor?"
+             title = "Select vendor"
+             choices = ["Ram = $2.5","Shyam = $3.0"]
+             choice = choicebox(msg,title,choices)
+             msgbox("You chose: "+str(choice))
+          else: 
+             msg = "For parle-G, Which vendor?"
+             title = "Select vendor"
+             choices = ["Ram = $2.0","Shyam = $2.3"]
+             choice = choicebox(msg,title,choices)
+             msgbox("You chose: "+str(choice))
+  elif (choice == "Soap"):
+          msg =  "Which brand?"
+          title = "select brand"
+          choices = ["pears","lux"]
+          choice = choicebox(msg,title,choices)
+          msgbox("You chose: "+str(choice))
+          if (choice == "pears"):
+             msg = "Which vendor?"
+             title = "Select vendor"
+             choices = ["Ram = $2.0","Shyam = $2.0"]
+             choice = choicebox(msg,title,choices)
+             msgbox("You chose: "+str(choice))
+          else: 
+             msg = "For lux, Which vendor?"
+             title = "Select vendor"
+             choices = ["Ram = $3.0","Shyam = $3.1"]
+             choice = choicebox(msg,title,choices)
+             msgbox("You chose: "+str(choice))
+ else:
+         sys.exit(0)    
+
+
+    
